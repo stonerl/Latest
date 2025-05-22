@@ -9,7 +9,7 @@
 import Cocoa
 
 /// The operation for checking for updates via Homebrew.
-class HomebrewCheckerOperation: StatefulOperation, UpdateCheckerOperation {
+class HomebrewCheckerOperation: StatefulOperation, UpdateCheckerOperation, @unchecked Sendable {
 	
 	static var sourceType: App.Source {
 		return .unsupported
